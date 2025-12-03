@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Temperature Now App</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Now</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ Temperature Now</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off"/>
+      <button onclick="getWeather()">Search</button>
+      <ul id="suggestions" class="suggestions"></ul>
+    </div>
+    <div id="weatherInfo" class="weather-info hidden">
+      <div class="weather-card">
+        <h2 id="cityName"></h2>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+        <p id="description"></p>
+        <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+      </div>
+    </div>
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="cities.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
